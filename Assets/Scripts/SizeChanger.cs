@@ -8,7 +8,7 @@ public class SizeChanger : MonoBehaviour
 
     private bool _isIncreased = true;
 
-    void Update()
+    private void Update()
     {
         transform.localScale *= _isIncreased ? 1 + (_speed * Time.deltaTime) : 1 - (_speed * Time.deltaTime);
 
